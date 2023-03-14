@@ -20,7 +20,6 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatTooltipModule } from '@angular/material/tooltip';
-import {MatBadgeModule} from '@angular/material/badge';
 import { HttpClientModule } from '@angular/common/http';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
@@ -50,8 +49,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MatTabsModule,
     MatTooltipModule,
     MatGridListModule,
-    FlexLayoutModule,
-    MatBadgeModule,
+    FlexLayoutModule
   ],
   exports: [
     RouterModule,
@@ -75,8 +73,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MatTabsModule,
     MatTooltipModule,
     MatGridListModule,
-    FlexLayoutModule,
-    MatBadgeModule
+    FlexLayoutModule
   ],
   providers:[
   ]
