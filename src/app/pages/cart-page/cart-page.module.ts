@@ -10,7 +10,6 @@ import { MatProgressSpinnerModule } from "@angular/material/progress-spinner";
 import { RouterModule } from "@angular/router";
 import { CartListComponent } from "src/app/components/common/cart-list/cart-list.component";
 import { CartPaymentComponent } from "src/app/components/common/cart-payment/cart-payment.component";
-import { SharedMaterialModule } from "src/app/components/shared/material-module";
 import { CartPageComponent } from "./cart-page.component";
 
 const routes = [{path: '', component: CartPageComponent}]
@@ -23,7 +22,13 @@ const routes = [{path: '', component: CartPageComponent}]
     ],
     imports: [
         CommonModule,
-        SharedMaterialModule,
+        MatGridListModule,
+        MatListModule,
+        MatCardModule,
+        MatButtonModule,
+        FlexLayoutModule,
+        MatIconModule,
+        MatProgressSpinnerModule,
         RouterModule.forChild(routes)
     ]
 })
